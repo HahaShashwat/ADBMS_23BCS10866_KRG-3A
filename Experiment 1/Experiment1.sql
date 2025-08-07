@@ -1,3 +1,5 @@
+--Easy Level--
+
 -- Creating AUTHOR table
 CREATE TABLE AUTHOR_INFO (
     ID INT PRIMARY KEY,
@@ -33,6 +35,8 @@ INSERT INTO BOOK_INFO (BookCode, BookTitle, WrittenBy) VALUES
 SELECT B.BookTitle, A.Name AS AuthorName, A.Nation
 FROM BOOK_INFO B
 JOIN AUTHOR_INFO A ON B.WrittenBy = A.ID;
+
+--Medium Level--
 
 
 -- Creating DEPARTMENT table
